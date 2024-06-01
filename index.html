@@ -4,134 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <title>Clay Thomas Bowser for Mayor</title>
+    <title>Clay Thomas Bowser for Mayor</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        p {
-            color: #666;
             line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #1C1B29;
+            color: white;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        h6 {
+            margin: 0;
+            padding:0;
         }
-        .button:hover {
-            background-color: #0056b3;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: -125px;
+            border-radius: 50%;
         }
-        /* Modal container */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        .headerbg {
+           background-color: yellow; 
+           background: linear-gradient(45deg,#001f6d,#250037,#4d012b,#001813);
+           animation: color 12s ease-in-out infinite;
+           background-size: 300% 300%;
+           height: 300px;
+           text-align: center;
+           padding-top:10px;
+           text-transform: uppercase;
         }
-
-        /* Modal content box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            /*width: 80%; /* Could be more or less, depending on screen size */
-            max-width: 500px;
+        @keyframes color{
+            0%{background-position: 0 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0 50%;}
         }
-
-        /* Close button */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
+        .nominationbox {
+            background-color: rgb(239, 239, 239);
             color: black;
-            text-decoration: none;
-            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            width: 300px;
+          margin-bottom: 50px;  
+            
+        }
+        .nominationbox > * {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        
+        }
+        .icons {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        .biography {
+            padding: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .biography > h3 {
+            font-weight: 400;
+        }
+        a {color: white;}
+
+        @media screen and (max-width: 390px) {
+            img {
+                margin: 0 auto;
+                margin-top: -80px;
+            }
+            .headerbg {
+                height: 300px;
+            }
+        }
+        @media screen and (max-width: 255px) {
+            img {
+                margin: 0 auto;
+                margin-top: -10px;
+                max-width: 100px;
+            }
+            .headerbg {
+                height: 300px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Clay Thomas Bowser for Mayor of Halifax</h1>
-        <img
-        style="max-width:200px;
-        float:right;"
-        src="smile_with_teeth_claybowser_darker.png">
-        <p>Dear Residents of Halifax,</p>
-        <p>I am thrilled to announce my candidacy for mayor of our beautiful city. Halifax holds a special place in my heart, and I am deeply committed to making it an even better place to live, work, and thrive.</p>
-        <p>As an independent candidate, I offer a fresh perspective that is not bound by party lines. My sole allegiance is to you, the people of Halifax, and I am dedicated to representing your voices and interests in city hall.</p>
-        <p>My vision for Halifax is one of inclusivity, sustainability, and prosperity for all. Together, we can tackle the challenges we face and build a brighter future for our city.</p>
-        <p>I invite you to join me on this journey. Together, let's create positive change and make Halifax the best it can be.</p>
-        <p>Sincerely,</p>
-        <p><em>Clay Thomas Bowser</em></p>
-        <div style="text-align: center;">
-            <a class="button" href="mailto:claybowser95@hotmail.com?subject=Nominate%20Clay%20Thomas%20Bowser%20for%20Mayor&amp;body=Dear%20Clay%20Thomas,%0A%0AI%20wish%20to%20officially%20nominate%20you%20for%20mayor%20of%20Halifax.%20My%20address%20is%20[YOUR%20ADDRESS%20HERE]%20and%20my%20name%20is%20[YOUR%20NAME%20HERE].%0A%0AThank%20you.">Nominate Clay Thomas for Mayor of Halifax</a>
+    <div>
+    <header>
+        <div class="headerbg">
+    <h6>Strong. Kind. Beautiful.</h6>
+    <h1>Clay Thomas Bowser</h1>
+    <h3>For Mayor of Halifax</h3>
         </div>
+    <img src="./claybowser_suit.png" alt="Face photo of Clay Thomas Bowser.">
+    </header>
+    <div class="icons">
+    <a href="https://x.com/BOWSER_HFX" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://youtube.com/@claybowser?si=nYkJu-dsvMcz5QsG" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@claythomasbowser" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
-<div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p style="text-align: center;">Dear Halifax community,</p>
-<p>I am aware of a recent Reddit post made to r/halifax & r/NovaScotia that falsely accuses me of criminal activities. <strong>These claims are entirely baseless and untrue.</strong> I have reported the post and taken steps to address this issue.</p>
-<p>Transparency and integrity are core values of my campaign. I remain committed to serving our community with honesty and dedication. I encourage everyone to focus on positive and constructive dialogue.</p>
-<p>Thank you for your continued support.</p>
-<p><em>Clay Thomas Bowser</em></p>
-        </div>
-      </div>
-      
-      <script>
-          // Get the modal
-          var modal = document.getElementById("myModal");
-      
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
-      
-          // When the page loads, open the modal 
-          window.onload = function() {
-              modal.style.display = "block";
-          }
-      
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
-              modal.style.display = "none";
-          }
-      
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-      </script>
+    <section class="biography">
+    <h2>Biography</h2>
+    <h3>Hi I'm Clay Thomas Bowser - a full stack developer & politician living in Halifax, Nova Scotia. This year I am excited to announce my running for mayor of Halifax!</h3>
+    <h2>My vision for Halifax</h2>
+    <h3>My vision for Halifax is to create a thriving, inclusive city where every resident has access to affordable housing, feels safe in their community, and finds ample opportunities for personal and professional growth.</h3>
+    </section>
+    <div class="nominationbox">
+    <h2>Share my vision?</h2>
+    <h4 style="margin:5px; font-weight: 400">Nominate me for Mayor 👨‍💼</h4>
+    <a style="background-color: black; color: white; border-radius: 5px; display: inline-block; width: 80%; text-decoration: none; padding: 10px; margin: 10px;" href="mailto:claybowser95@hotmail.com?subject=Nominate%20Clay%20Thomas%20Bowser%20for%20Mayor&body=Dear%20Clay%20Thomas,%0A%0AI%20wish%20to%20officially%20nominate%20you%20for%20mayor%20of%20Halifax.%20My%20address%20is%20[YOUR%20ADDRESS%20HERE]%20and%20my%20name%20is%20[YOUR%20NAME%20HERE].%0A%0AThank%20you.">Email nomination</a>
+    </div>
+
+</div>
 </body>
 </html>
