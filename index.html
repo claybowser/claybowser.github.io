@@ -18,6 +18,7 @@
             background-position: right;
             background-size: cover;
             background-attachment: fixed;
+
         }
         img {
             width: 100%;
@@ -52,7 +53,7 @@
             background-color: rgb(29, 184, 29);
             display:block;
             margin:0 40px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             padding: 10px;
             font-size: larger;
             border-radius: 10px;
@@ -69,7 +70,7 @@
         }
         @media screen and (min-width: 1066px){
             main {
-                width: 500px;
+                max-width: 500px;
                 border: 2px solid lightgray;
                 border-radius: 10px;
                 margin: 20px;
@@ -77,12 +78,22 @@
                 box-shadow: 1px 2px 14px 3px rgba(0,0,0,0.75);
                 -webkit-box-shadow: 1px 2px 14px 3px rgba(0,0,0,0.75);
                 -moz-box-shadow: 1px 2px 14px 3px rgba(0,0,0,0.75);
+                padding: 25px;
+            }
+            li {
+                padding: 10px 0;
             }
             footer {
                 text-align: center;
             }
             .pusher{
                 flex-grow: 1;
+            }
+            main {
+                font-size: 150%;
+            }
+            .modal {
+                font-size: 150%;
             }
         }
 /* Modal container */
@@ -153,7 +164,7 @@
     <p>My vision for Halifax is to create a thriving, inclusive city where every resident has access to affordable housing, feels safe in their community, and finds ample opportunities for personal and professional growth.</p>
     <p><a href="mailto:claybowser95@hotmail.com">If you wish to contact me for an interview please click here.</a></p>
     <p>Clay Thomas Bowser is running for mayor of Halifax for the year 2024. He is the first candidate of this year to do so. He is doing this out of his love for this beautiful city we call home.</p>
-    <p>You may follow me on social media through <a href="https://x.com/BOWSER_HFX" target="_blank">Twitter</a> and <a href="https://www.youtube.com/@claybowser" target="_blank">Youtube</a>.</p>
+    <p>You may follow me on social media through <a href="https://x.com/BOWSER_HFX" target="_blank">twitter</a> and <a href="https://www.youtube.com/@claybowser" target="_blank">youtube</a>.</p>
     </footer>
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -161,25 +172,36 @@
           <img style="max-width: 100%;"src="mayor-2-headshot.png">
           <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: 700;">I am Clay Thomas Bowser. STAY STRONG!
           <br><br>Your support means the world to me, and I am committed to working tirelessly for you.
-          <br><br>Unity. Progress. Let's Sail Halifax into the Future.</p>
-          <a class="donate-btn" href="https://www.paypal.com/donate/?hosted_button_id=GR3VQ9XPY7RQN" target="_blank">Donate</a>
+          <br><br>Unity. Progress. Let's Sail Halifax into the Future, together.</p>
+          <a class="donate-btn" style="margin-bottom:-4px;"href="https://www.paypal.com/donate/?hosted_button_id=GR3VQ9XPY7RQN" target="_blank">Donate</a>
 
         </div>
+      </div>
+      <div id="activateModal" style="width:200px; height: 200px; background-color: transparent;position: fixed;">
+
       </div>
       
       <script>
           // Get the modal
           var modal = document.getElementById("myModal");
+          var activateModal = document.getElementById("activateModal");
       
           // Get the <span> element that closes the modal
           var span = document.getElementsByClassName("close")[0];
       
-          // When the page loads, open the modal 
-          window.onload = function() {
-            if (window.innerWidth > 900) {
-              modal.style.display = "block";
-            } else {modal.style.display = "none";}
-          }
+    // When the page loads, check if the screen width is over 900px
+    window.onload = function() {
+        if (window.innerWidth > 900) {
+            modal.style.display = "none"; // Keep the modal hidden initially
+        }
+    }
+
+    // When the user hovers over the activateModal element, display the modal
+    activateModal.onmouseover = function() {
+        if (window.innerWidth > 900) {
+            modal.style.display = "block";
+        }
+    }
       
           // When the user clicks on <span> (x), close the modal
           span.onclick = function() {
