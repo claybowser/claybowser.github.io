@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clay Bowser — Full-Stack Developer</title>
+  <meta name="description" content="Clay Bowser — Full-Stack Developer (React, Node, TypeScript, Python, AI). Available for remote US roles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed; /* purple */
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef8;background-color:var(--bg);}
+    body{min-height:100vh;}
+    .container{max-width:980px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:20px}
+    h1{margin:0;font-size:22px}
+    .sub{color:var(--muted);font-size:13px;margin-top:4px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+    nav a.primary{background:linear-gradient(90deg,var(--accent),#4f46e5);padding:8px 12px;border-radius:8px;color:white;font-weight:600;text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:26px;align-items:start}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid var(--glass);cursor:pointer;transition:transform 0.1s ease-in-out;}
+    .card:hover{transform:scale(1.02);}
+    .summary{line-height:1.5;color:#dbeafe}
+    .meta{margin-top:12px;color:var(--muted);font-size:14px}
+    .cta{margin-top:18px}
+    .cta a{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#4f46e5);color:white}
+    .btn-ghost{border:1px solid var(--glass);color:var(--muted);background:transparent}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    .projects{margin-top:26px;display:grid;gap:14px}
+    .project{display:flex;gap:14px;align-items:flex-start;text-decoration:none}
+    .proj-thumb{width:120px;height:78px;border-radius:8px;background:linear-gradient(90deg,#0b1220, #071022);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+    .proj-body h3{margin:0;font-size:16px}
+    .proj-body p{margin:8px 0 0 0;color:var(--muted);font-size:13px}
+    .badges{margin-top:8px}
+    .badge{display:inline-block;background:var(--glass-2);padding:6px 8px;border-radius:8px;margin-right:8px;font-size:12px;color:var(--muted)}
+
+    .video{margin-top:8px}
+    .video iframe{width:100%;height:220px;border-radius:8px;border:0}
+
+    footer{margin-top:28px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .video iframe{height:200px}
+      nav{display:none}
+    }
+
+    .muted{color:var(--muted)}
+    .link{color:#c7d2fe;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CB</div>
+        <div>
+          <h1>Clay Bowser</h1>
+          <div class="sub">Full-Stack Developer — React · Node · TypeScript · Python · AI</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="primary" href="/resume.pdf" download>Download Résumé</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <div class="summary">
+              Full‑stack developer focused on building production web apps and integrating AI into developer tools and interactive systems. Experienced with React, TypeScript, Node.js, Flask/Python, and cloud deployments. Available for U.S. remote roles.
+            </div>
+            <div class="meta">Selected work: production-style ticketing platform, VS Code AI extension, Flask data visualizer, AI playerbots.</div>
+
+            <div class="cta">
+              <a class="btn-primary" href="#projects">View Projects</a>
+              <a class="btn-ghost" href="mailto:claybowser95@hotmail.com" style="margin-left:10px">Email Me</a>
+            </div>
+
+            <div class="skills">
+              <span class="skill">React</span>
+              <span class="skill">TypeScript</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">Python</span>
+              <span class="skill">Flask</span>
+              <span class="skill">MongoDB</span>
+              <span class="skill">Stripe</span>
+              <span class="skill">Ollama</span>
+              <span class="skill">Azure</span>
+            </div>
+          </div>
+
+          <div class="projects" id="projects">
+
+            <a href="https://github.com/your-username/halifax_transit_fare_app" target="_blank" class="project card">
+              <div class="proj-thumb">MERN</div>
+              <div class="proj-body">
+                <h3>Halifax Transit Fare System — MERN + Stripe</h3>
+                <p>Production-style ticketing platform with secure authentication, Stripe payments, and real-time QR code validation. Demo video included.</p>
+                <div class="badges">
+                  <span class="badge">React</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">MongoDB</span>
+                  <span class="badge">Stripe</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://github.com/your-username/code-hedgehog" target="_blank" class="project card">
+              <div class="proj-thumb">VS</div>
+              <div class="proj-body">
+                <h3>Code Hedgehog — VS Code Extension (AI)</h3>
+                <p>AI-powered extension integrating Ollama + CodeGemma for fast, local code suggestions. Published to the VS Code Marketplace.</p>
+                <div class="badges">
+                  <span class="badge">TypeScript</span>
+                  <span class="badge">VS Code API</span>
+                  <span class="badge">AI</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://github.com/your-username/data-explorer" target="_blank" class="project card">
+              <div class="proj-thumb">Py</div>
+              <div class="proj-body">
+                <h3>Data Explorer — Flask + Visualization</h3>
+                <p>Upload and analyze CSVs, produce scatter/bar/heatmap charts and exportable reports. Useful for data exploration and lightweight ETL tasks.</p>
+                <div class="badges">
+                  <span class="badge">Python</span>
+                  <span class="badge">Flask</span>
+                  <span class="badge">Data Viz</span>
+                </div>
+              </div>
+            </a>
+
+            <div class="project card">
+              <div class="proj-thumb">AI</div>
+              <div class="proj-body">
+                <h3>AI Playerbots — WoW Private Server (Personal)</h3>
+                <p>Experimentation with agent behavior: combat logic, pathfinding, and decision loops used to tune NPCs on a private World of Warcraft server.</p>
+                <div class="badges">
+                  <span class="badge">Game AI</span>
+                  <span class="badge">Simulation</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin:0 0 8px 0">Video Demo</h3>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/5sZ1KGxU7NY" title="Halifax Transit Fare App Demo" allowfullscreen></iframe>
+            </div>
+
+            <h3 style="margin-top:14px">Quick Links</h3>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+              <a class="link" href="https://github.com/your-username" target="_blank">GitHub</a>
+              <a class="link" href="https://marketplace.visualstudio.com/items?itemName=claybowser0296928.code-hedgehog" target="_blank">Code Hedgehog (Marketplace)</a>
+              <a class="link" href="/resume.pdf" download>Download Résumé (PDF)</a>
+              <a class="link" href="mailto:claybowser95@hotmail.com">claybowser95@hotmail.com</a>
+            </div>
+
+            <div style="margin-top:12px;color:var(--muted);font-size:13px">Available for full-time remote positions in the U.S. and Canada. Open to interviews across time zones.</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="contact" style="margin-top:20px">
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Contact</h3>
+          <p class="muted">Email me to set up a call or request additional materials (code snippets, case studies, or private demo access).</p>
+          <p style="margin-top:8px">Email: <a class="link" href="mailto:claybowser95@hotmail.com">claybowser95@hotmail.com</a></p>
+          <p>GitHub: <a class="link" href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© Clay Bowser</div>
+      <div class="muted">Designed for hiring managers — quick skim, clear signal.</div>
+    </footer>
+  </div>
+</body>
+</html>
